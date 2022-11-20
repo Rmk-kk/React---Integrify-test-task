@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Test task for Integrify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was made with react create-react-app, react-bootstrap, react router.
 
-## Available Scripts
+## Used technologies
 
-In the project directory, you can run:
+`React`, React Hooks: `useEffect`, `useState`, `useParams`; Router hook: `useNavigate`; `Localstorage`, `JSONPlaceholder API`, `AccuWeather API`, `React bootstrap` and `CSS styling`
 
-### `npm start`
+## Disclaimer
+Weather API is very limited for requests. I have tried to make dynamic weather cards when you send request for 'Find city by name', this function can easily create a lot of requests, so API can be locked for 24 hours because of limit really fast. I highly recommend checking it on cities, like Helsinki, Oulu etc., because there are almost no cities with same names. ( Example : You will search for Moscow, it will find about 24 cities named Moscow, and each city will create a request for weather to show you current weather there. So it's 25 requests, and the limit is 150/ daily).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features 
+### Client Card
+ 1. localstorage set for Client Card tasks. It's made to imitate post requests to server when adding or removing a new person, so you can add/remove, reload page and the changes will still be there. 
+ 2. You can add client to favourites, and then sort the list to show only favourite clients
+ 3. Ability to delete and add clients from the list ( Max 12, after that button is disabled)
+ 4. Expand cards to see more detailed information about the client
+ 5. For new clients i connected 'id generator', so the id of new clients and old ones are unique, but in different style.
+ 6. You can click on button at the end of the list to add new client.
+ 7. Added filter by name to quickly find client if you know his/her name.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Weather API
+ 1. Dynamic Cards - When searching for city you see live weather there, and on click you will be re-directed with router to city page to see forecast for 5 days.
+ 2. On City page you see 5 days forecast, and if you hover on one of those cards it will rotate showing you forecast for the night time that day.
+ 
+ 
+### Screenshots
 
-### `npm test`
+`Screenshots are scrollable to right side, when you open them`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Weather API - Search](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-14.png?raw=true)
+![Weather API - City Page](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-25.png?raw=true)
+![Cards API - All Cards](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-56.png?raw=true)
+![Cards API - Detailed information](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-35-02.png?raw=true)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
