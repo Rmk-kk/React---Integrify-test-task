@@ -1,6 +1,6 @@
 # Test task for Integrify
 
-This project was made with react create-react-app, react-bootstrap, react router.
+This project was made with react create-react-app, react-bootstrap, react router specially for Integrify platform as test task. Hope you enjoy!
 
 ## Used technologies
 
