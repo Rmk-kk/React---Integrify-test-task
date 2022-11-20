@@ -12,9 +12,9 @@ This project was made with react create-react-app, react-bootstrap, react router
 
 ## Features 
 ### Client Card
- 1. localstorage set for Client Card tasks. It's made to imitate post requests to server when adding or removing a new person, so you can add/remove, reload page and the changes will still be there. 
+ 1. Localstorage set for Client Card tasks. It's made to imitate post requests to server when adding or removing a new person, so you can add/remove, reload page and the changes will still be there. 
  2. You can add client to favourites, and then sort the list to show only favourite clients
- 3. Ability to delete and add clients from the list ( Max 12, after that button is disabled)
+ 3. Ability to delete and add clients to the list ( Max 12, after that button is disabled)
  4. Expand cards to see more detailed information about the client
  5. For new clients i connected 'id generator', so the id of new clients and old ones are unique, but in different style.
  6. You can click on button at the end of the list to add new client.
