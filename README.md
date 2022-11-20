@@ -28,10 +28,14 @@ Weather API is very limited for requests. I have tried to make dynamic weather c
 
 `Screenshots are scrollable to right side, when you open them`
 
-![Weather API - Search](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-14.png?raw=true)
-![Weather API - City Page](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-25.png?raw=true)
-![Cards API - All Cards](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-56.png?raw=true)
-![Cards API - Detailed information](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-35-02.png?raw=true)
+1. ![Weather API - Search](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-14.png?raw=true)
+2. ![Weather API - City Page](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-25.png?raw=true)
+3. ![Cards API - All Cards](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-34-56.png?raw=true)
+4. ![Cards API - Detailed information](https://github.com/Rmk-kk/integrify-test/tree/master/public/screenshots/image_2022-11-20_12-35-02.png?raw=true)
+
+### Link to Netlify
+
+https://637a263b850b2c38210cc73f--integrify-test-app.netlify.app
 
 
     
