@@ -7,7 +7,8 @@ This project was made with react create-react-app, react-bootstrap, react router
 `React`, React Hooks: `useEffect`, `useState`, `useParams`; Router hook: `useNavigate`; `Localstorage`, `JSONPlaceholder API`, `AccuWeather API`, `React bootstrap` and `CSS styling`
 
 ## Disclaimer
-Weather API is very limited for requests. I have tried to make dynamic weather cards when you send request for 'Find city by name', this function can easily create a lot of requests, so API can be locked for 24 hours because of limit really fast. I highly recommend checking it on cities, like Helsinki, Oulu etc., because there are almost no cities with same names. ( Example : You will search for Moscow, it will find about 24 cities named Moscow, and each city will create a request for weather to show you current weather there. So it's 25 requests, and the limit is 150/ daily).
+1. Weather API is very limited for requests. I have tried to make dynamic weather cards when you send request for 'Find city by name', this function can easily create a lot of requests, so API can be locked for 24 hours because of limit really fast. I highly recommend checking it on cities, like Helsinki, Oulu etc., because there are almost no cities with same names. ( Example : You will search for Moscow, it will find about 24 cities named Moscow, and each city will create a request for weather to show you current weather there. So it's 25 requests, and the limit is 150/ daily).
+2. Arrows on the page are responsible for 'back, forward' action, you can use them instead of browser arrows. Made with `useNavigate` Hook
 
 ## Features 
 ### Client Card
