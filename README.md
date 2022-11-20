@@ -22,7 +22,7 @@ Weather API is very limited for requests. I have tried to make dynamic weather c
 ### Weather API
  1. Dynamic Cards - When searching for city you see live weather there, and on click you will be re-directed with router to city page to see forecast for 5 days.
  2. On City page you see 5 days forecast, and if you hover on one of those cards it will rotate showing you forecast for the night time that day.
- 
+ 3. When you click after search to see more detailed forecast, you are redirected with Router to page with passing ID through useParams.
  
 ### Screenshots
 
