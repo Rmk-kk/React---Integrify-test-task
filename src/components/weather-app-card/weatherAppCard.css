@@ -1,0 +1,79 @@
+.weather-city__card h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.weather-city__card h4 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    position: relative;
+    z-index: 1;
+}
+.card-temp {
+    font-size: 6.5rem;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+    width: 50%;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.card--info span {
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.card--info {
+    display: flex;
+
+}
+
+.card--img {
+    width: 15rem;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: -25%;
+    opacity: 70%;
+}
+.weather-city__card {
+    display: flex;
+    width: 100%;
+    max-width: 16rem;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.weather-city__card-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.weather-city__card-btn {
+    width: 100%;
+    color:black;
+    background-color: #fdb514;
+}
+
+.weather-city__card-btn:hover {
+    background-color: transparent;
+}
+

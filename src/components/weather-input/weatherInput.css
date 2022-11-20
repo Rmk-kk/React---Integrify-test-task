@@ -1,0 +1,18 @@
+.weather-input{
+    padding: 5px 10px;
+    font-size: 2rem;
+}
+
+.weather-input-group {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.weather-input-btn {
+    font-size: 2rem;
+}
+
+.input-error {
+    position: relative;
+    border:2px solid #fb2222;
+}

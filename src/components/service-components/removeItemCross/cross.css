@@ -1,0 +1,17 @@
+
+
+.remove-person_svg {
+    position: absolute;
+    cursor: pointer;
+    top: 1rem;
+    fill: #8a8a8a;
+    left: 1rem;
+    width: 1.5rem;
+
+    transition: all .1s linear;
+}
+
+.remove-person_svg:hover {
+    fill: #fdb514;
+    transform: scale(1.1);
+}

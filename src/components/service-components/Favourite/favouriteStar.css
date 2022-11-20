@@ -1,0 +1,18 @@
+.favourites-star {
+    position: absolute;
+    fill: #8a8a8a;
+    width: 3rem;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    transition: all .1s linear;
+}
+
+.favourites-star:active {
+    fill:#fdb514;
+}
+
+.person-selected .favourites-star{
+    fill:#fdb514;
+    width: 4rem;
+}

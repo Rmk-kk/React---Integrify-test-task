@@ -1,0 +1,182 @@
+.forecast_cards-container {
+    display: flex;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.forecast_cards-card {
+    font-family: 'Kanit', sans-serif;
+    list-style: none;
+    border-radius: 15px;
+    transform-style: inherit;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
+    position: relative;
+    height: 20rem;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.forecast_cards-card h2, h3{
+    position: relative;
+    z-index: 2;
+}
+
+.forecast_cards-card:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.forecast_cards-card:hover .forecast_cards-card--front{
+    transform: rotateY(-180deg);
+}
+
+.forecast_cards-card:hover .forecast_cards-card--back{
+    transform: rotateY(0);
+}
+
+.forecast_cards-card--front {
+    position: relative;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #b7eaff 0%,#94dfff 100%);
+    padding: 1rem 2rem;
+    color: #2e2e2e;
+}
+
+
+.forecast_cards-card--back {
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    color:#fff;
+    background: linear-gradient(to bottom, #20202c 0%,#515175 100%);
+}
+
+.forecast-card-image {
+    position: absolute;
+    width: 18rem;
+    top: 0;
+    right: -6rem;
+}
+
+.side {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+    -webkit-backface-visibility: hidden;
+    height: 20rem;
+    transition: all .7s ease;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side h2{
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+.card-temperature {
+    text-align: center;
+    font-size: 3rem;
+    align-self: center;
+}
+
+
+.city-weather-card {
+    font-family: 'Kanit', sans-serif;
+    font-weight: normal;
+    width: 28rem;
+    display: inline-block;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    background: linear-gradient(26deg, #b7eaff, #94dfff, #6b7e90, #d4d4d4);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+    margin-bottom: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+
+
+.city-weather-card h1,h2,h3{
+    position: relative;
+    font-size: 1.7rem;
+       z-index: 2;
+}
+
+.city-weather-card h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.card-phrase {
+    font-size: 2rem;
+}
+
+.card-precipitation{
+    font-size: 1.5rem;
+}
+
+.city-weather-card-temp {
+    font-weight: 500;
+    position: relative;
+    font-size: 16rem;
+    line-height: 0.7;
+    text-align: right;
+    margin-right: 5rem;
+}
+
+.city-weather-card-status {
+    font-size: 3.5rem;
+    line-height: 0.8;
+}
+
+.city-weather-card-temp span {
+    position: absolute;
+    font-size: 7rem;
+    top:0;
+}
+
+.city-weather-card-img {
+    position: absolute;
+    top: -4rem;
+    right: -10rem;
+    opacity: 0.7;
+    width: 30rem;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}

@@ -1,0 +1,4 @@
+
+.card-add__form input::placeholder {
+    opacity: 0.4;
+}

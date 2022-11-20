@@ -1,0 +1,22 @@
+
+.weather-city__list {
+    padding: 5rem 0 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+}
+
+.no-results__header {
+    margin-top: 3rem;
+    font-size: 6rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Kanit';
+}
+

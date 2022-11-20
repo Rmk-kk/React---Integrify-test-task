@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.search-input {
+  max-width: 40rem;
+  margin:0 auto 4rem;
+}
+
+
+
