@@ -33,15 +33,20 @@ const WeatherInput = ({onSearchUpdate}) => {
         setError(true);
     }
 
+    const onCitiesLoaded = (cities) => {
+        setError(false);
+        setCurrentCities(cities)
+    }
+
     //on Button Click to make request
     const onInputSubmit = () => {
-        if(value.length < 4) {
+        if(value.length < 5) {
             setClazz('input-error')
             return
         }
         setClazz('');
         serviceComponent._getCitiesList(value)
-            .then(setCurrentCities)
+            .then(onCitiesLoaded)
             .catch(onError);
     }
 

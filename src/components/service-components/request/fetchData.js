@@ -4,7 +4,7 @@ class FetchData {
 
     _weatherCitiesUrl = 'http://dataservice.accuweather.com/locations/v1/cities/search?';
     _cityByIdUrl = 'http://dataservice.accuweather.com/locations/v1/';
-    _weatherAPI = 'apikey=DcGuMuZxPgy5HZNC5tDZ0bmbkCCm4GKR';
+    _weatherAPI = 'apikey=ule6bAhFJ2UJnH9SlrzxLVigX0wyARst';
     _weatherAPI2 = 'apikey=KYFYLCUfeIQ8VtaJim5Pq2rQTcjChghz';
     _weatherAPI3 = 'apikey=EzguswaWkrO81WnKnzGzROMiAISWqP2t';
     _weatherAPI4 = 'apikey=tJP0YGJAaB8U94P9DHiROlrdBvtoGRz5';
@@ -19,22 +19,22 @@ class FetchData {
     }
 
     _getCitiesList = async (string) => {
-        const response = await fetch(`${this._weatherCitiesUrl}${this._weatherAPI6}&q=${string}`);
+        const response = await fetch(`${this._weatherCitiesUrl}${this._weatherAPI}&q=${string}`);
         return await response.json()
     }
 
     _getOneHourForecast = async (CityCode) => {
-        const response = await fetch(`${this._weatherOneHourForecastUrl}${CityCode}?${this._weatherAPI6}`)
+        const response = await fetch(`${this._weatherOneHourForecastUrl}${CityCode}?${this._weatherAPI}`)
         return await response.json()
     }
 
     _getFiveDaysForecast = async (CityCode) => {
-        const response = await fetch(`${this._weather5DaysForecastUrl}${CityCode}?${this._weatherAPI6}`);
+        const response = await fetch(`${this._weather5DaysForecastUrl}${CityCode}?${this._weatherAPI}`);
         return await response.json()
     }
 
     _getCityById = async (id) => {
-        const response = await fetch(`${this._cityByIdUrl}${id}?${this._weatherAPI6}`);
+        const response = await fetch(`${this._cityByIdUrl}${id}?${this._weatherAPI}`);
         return await response.json();
     }
 }

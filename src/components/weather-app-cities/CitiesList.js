@@ -11,26 +11,27 @@ const CitiesList = ({currentSearch, errorStatus}) => {
 
     useEffect(() => {
         onCitiesUpdate(currentSearch);
-        onErrorUpdate(errorStatus)
+        onErrorUpdate(errorStatus);
     },[currentSearch,errorStatus]);
 
+
     const onCitiesUpdate = (list) => {
-        setCities(list)
+        setCities(list);
     };
+
     const onErrorUpdate = (status) => {
         setError(status);
-    }
+    };
 
     const elements = cities.map(city => {
         return <WeatherAppCard city={city} key={city.Key}/>
     })
 
-    const noResult = (currentSearch.length === 0 && !error) ? <h1 className='no-results__header'>Oops...! Nothing found:( <br/>Try entering another city</h1> : null;
     const errorMessage = error ? <Error404/> : null;
-    const content = (!noResult && !errorMessage) ? elements : null;
+    const content = error ? null : elements;
+
     return (
         <>
-            {noResult}
             {errorMessage}
             <ul className='weather-city__list'>
                 {content}
